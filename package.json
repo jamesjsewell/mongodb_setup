@@ -1,0 +1,11 @@
+{
+  "name": "mongodb_setup",
+  "version": "1.0.0",
+  "description": "setup for connecting to a mongodb atlas cluster",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jamesjsewell",
+  "license": "ISC"
+}
