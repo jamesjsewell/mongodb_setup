@@ -29,8 +29,6 @@ app.listen(PORT, function() {
 	)
 })
 
-app.get("*", (req, res)=>{ res.send("hello world") })
-
 // for single page apps
 
 // app.get("*", function(req, res, next) {

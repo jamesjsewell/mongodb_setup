@@ -7,6 +7,6 @@ const apiRoutes = express.Router();
 const itemRoutes = require("./routes/items.js")
 	
 // sets subroutes of the main api route
-apiRoutes.use("/items", itemRoutes)
+apiRoutes.use("/example_route", itemRoutes)
 
 module.exports = apiRoutes;
