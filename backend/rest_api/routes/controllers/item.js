@@ -33,6 +33,21 @@ module.exports = {
     },
     update: function(req, res, next){
 
+        Item.findByIdAndUpdate(
+            { _id: req.params.id },
+            req.body,
+            function(err, record) {
+                if (err) {
+                    console.log(err);
+                    res.status(400).send(err);
+                } else if (!record) {
+                    res.status(400).send("requested item not found");
+                } else {
+                    res.json(req.body);
+                }
+            }
+        );
+
     },
     delete: function(req, res, next){
 
