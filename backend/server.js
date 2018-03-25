@@ -1,9 +1,9 @@
 const express = require("express"),
-bodyParser = require("body-parser"),
-appMiddleWare = require("./middleware.js")
+	bodyParser = require("body-parser"),
+	appMiddleWare = require("./middleware.js")
 
 // connect to the database
-const connectToDB = require("./db_config.js").connectToDB    
+const connectToDB = require("./db_config.js").connectToDB
 connectToDB("test_project")
 
 // run app
@@ -18,12 +18,12 @@ app.use(appMiddleWare.parseQuery)
 
 
 // import routers
-let router = require("./rest_api/router.js")
+let router = require("./api_features/router.js")
 
 // router
 app.use("/api", router)
 
-app.listen(PORT, function() {
+app.listen(PORT, function () {
 	console.log(
 		"\n\n===== listening for requests on port " + PORT + " =====\n\n"
 	)
