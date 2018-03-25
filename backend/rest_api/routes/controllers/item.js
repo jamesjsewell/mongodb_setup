@@ -51,6 +51,16 @@ module.exports = {
     },
     delete: function(req, res, next){
 
+        Item.remove({ _id: req.params.id }, function(error) {
+            if (error) {
+                res.status(400).json(error);
+            }
+            res.status(201).json({
+                msg: `item with id ${req.params.id} has been removed.`,
+                id: req.params.id
+            });
+        });
+
     }
 
 
