@@ -1,6 +1,5 @@
 const express = require("express"),
-	bodyParser = require("body-parser"),
-	appMiddleWare = require("./middleware.js")
+	bodyParser = require("body-parser")
 
 // connect to the database
 const connectToDB = require("./db_config.js").connectToDB
@@ -14,7 +13,6 @@ app.set("port", PORT)
 // middleware
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
-app.use(appMiddleWare.parseQuery)
 
 
 // import routers
