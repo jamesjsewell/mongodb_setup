@@ -2,10 +2,15 @@
   "name": "mongodb_setup",
   "version": "1.0.0",
   "description": "setup for connecting to a mongodb atlas cluster",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "NODE_ENV=development nodemon --watch ./backend ./backend/server.js"
   },
   "author": "jamesjsewell",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "nodemon": "^1.17.2"
+  }
 }
