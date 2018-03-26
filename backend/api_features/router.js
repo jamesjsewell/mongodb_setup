@@ -1,12 +1,13 @@
 const express = require("express")
 
-// initializes main router
+// initializes main express router
 const apiRoutes = express.Router()
 
-// import routes
+// import api sub-routes
 const itemRoutes = require("./example_feature/itemRoutes.js")
 
-// sets subroutes of the main api route
+// tells main express router to use subroutes
 apiRoutes.use("/example_route", itemRoutes)
 
+// exports api routes to the main server file
 module.exports = apiRoutes
