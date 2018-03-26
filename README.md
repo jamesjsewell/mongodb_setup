@@ -8,5 +8,6 @@ you'll need to create a db_admin.js file in the 'backend' directory and add
 module.exports = {
   admin_password: 'your mongodb cluster password '
 }
-if you chose to use Mongodb Atlas, I have chosen to work that way, i just decided to keep the admin file
+-
+to it if you chose to use Mongodb Atlas, I have chosen to work that way, i just decided to keep the admin file
 out of my source code for obvious reasons
