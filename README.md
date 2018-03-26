@@ -4,7 +4,7 @@ mongodb setup with a functional boilerplate rest api integration through mongoos
 #### npm run dev #### 
 * ^starts the dev server
 
-you'll need to create a db_admin.js file in the main directory and add
+you'll need to create a db_admin.js file in the 'backend' directory and add
 module.exports = {
   admin_password: 'your mongodb cluster password '
 }
