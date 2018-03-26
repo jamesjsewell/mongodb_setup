@@ -1,7 +1,8 @@
 # mongodb_setup
 mongodb setup with a functional boilerplate rest api integration through mongoose.js
 
-####npm run dev#### starts the dev server
+####npm run dev#### 
+* ^starts the dev server
 
 you'll need to create a db_admin.js file in the main directory and add
 module.exports = {
